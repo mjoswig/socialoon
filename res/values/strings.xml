@@ -1,0 +1,50 @@
+<resources>
+
+    <string name="app_name">Socialoon</string>
+    
+    <string name="main_menu_map_item">Map</string>
+    <string name="main_menu_pokes_item">Pokes</string>
+    <string name="main_menu_profile_item">Profile</string>
+    
+	<string name="username_label">Username</string>
+	<string name="password_label">Password</string>
+	<string name="password_repeat_label">Repeat password</string>
+	<string name="email_label">Email</string>
+	<string name="register_label">Register</string>
+	
+	<string name="error_complete_all">Please complete all the required fields!</string>
+	<string name="error_invalid_username">Your username must begin with a letter and has to have between 4 and 12 alphanumeric characters!</string>
+	<string name="error_unavailable_username">Username isn\'t available!</string>
+	<string name="error_invalid_email">The given email is invalid!</string>
+	<string name="error_short_password">Your password must have at least 6 characters!</string>
+	<string name="error_unequal_passwords">Passwords don\'t match!</string>
+	<string name="error_invalid_date">The date must be in the near future!</string>
+	<string name="error_invalid_location">The location could not be found!</string>
+	
+	<string name="login_label">Log in</string>
+	<string name="signup_info_label">Don\'t have an account yet?</string>
+	<string name="signup_label">Sign up</string>
+	<string name="error_incorrect_login">Incorrect email or password!</string>
+	
+	<string name="exit_alert_title">Log out</string>
+    <string name="exit_alert_message">Are you sure you want to log out?</string>
+    
+    <string name="meetup_title">Meetup Title</string>
+    <string name="balloon_blue">Casual Activities</string>
+    <string name="balloon_red">Party &amp; Nightlife</string>
+	<string name="balloon_green">Sponsored Event</string>
+	<string name="meetup_location">Meetup Location</string>
+	<string name="short_desc">Short Description</string>
+	<string name="add_balloon">Create Meetup</string>
+	
+	<string name="profile_bio_placeholder">Tell us something about yourself</string>
+	<string name="profile_save">Save</string>
+	<string name="profile_saved">Profile changes saved</string>
+	
+	<string name="no_pokes">Nobody to hang out with &#8230;\nCreate a balloon and change it :)</string>
+	<string name="poked_you">wants to meet you</string>
+	
+	<string name="remove_balloon_title">Remove balloon</string>
+	<string name="remove_balloon_message">Are you sure you want to remove the balloon from the map?</string>
+	
+</resources>

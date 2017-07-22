@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/mi_map"
+        android:icon="@drawable/ic_btn_map"
+        android:title="@string/main_menu_map_item"
+        android:showAsAction="ifRoom">
+    </item>
+    <item
+        android:id="@+id/mi_pokes"
+        android:icon="@drawable/ic_btn_pokes"
+        android:title="@string/main_menu_pokes_item"
+        android:showAsAction="ifRoom">
+    </item>
+    <item
+        android:id="@+id/mi_profile"
+        android:icon="@drawable/ic_btn_profile"
+        android:title="@string/main_menu_profile_item"
+        android:showAsAction="ifRoom">
+    </item>
+</menu>

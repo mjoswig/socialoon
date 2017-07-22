@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+	<RelativeLayout 
+	    android:focusable="true"
+	    android:focusableInTouchMode="true"
+	    android:layout_width="match_parent"
+    	android:layout_height="wrap_content" >
+	    
+	    <TableLayout
+	        android:id="@+id/tableLayout1"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_centerHorizontal="false"
+	        android:layout_centerVertical="false"
+	        android:layout_margin="20dp"
+	        android:stretchColumns="*" >
+	
+	        <TableRow
+	            android:id="@+id/tableRow1"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content" >
+
+	            <ImageView
+	                android:id="@+id/iv_balloon"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_marginBottom="-50dp"
+	                android:layout_marginTop="-55dp"
+	                android:src="@drawable/socialoon_logo3" />
+	
+	        </TableRow>
+	
+	        <TableRow
+	            android:id="@+id/tableRow2"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content" >
+	            
+	            <TextView
+	                android:id="@+id/tv_email"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_marginBottom="5dp"
+	                android:layout_marginLeft="25dp"
+	                android:text="@string/email_label"
+	                android:textAppearance="?android:attr/textAppearanceMedium"
+	                android:textStyle="bold" />
+	
+	        </TableRow>
+	
+	        <TableRow
+	            android:id="@+id/tableRow3a"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:paddingLeft="25dp"
+	            android:paddingRight="25dp" >
+	            
+	            <EditText
+	                android:id="@+id/et_email"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_marginBottom="15dp"
+	                android:background="#d9d9d9"
+	                android:padding="5dp"
+	                android:textSize="15sp"
+	                android:inputType="textEmailAddress" />
+	
+	        </TableRow>
+	
+	        <TableRow
+	            android:id="@+id/tableRow5"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content" >
+	            
+	            <TextView
+	                android:id="@+id/tv_password"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_marginBottom="5dp"
+	                android:layout_marginLeft="25dp"
+	                android:text="@string/password_label"
+	                android:textAppearance="?android:attr/textAppearanceMedium"
+	                android:textStyle="bold" />
+	
+	        </TableRow>
+	
+	        <TableRow
+	            android:id="@+id/tableRow4"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:paddingLeft="25dp"
+	            android:paddingRight="25dp" >
+	            
+	            <EditText
+	                android:id="@+id/et_password"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:background="#d9d9d9"
+	                android:inputType="textPassword"
+	                android:padding="5dp"
+	                android:textSize="15sp" />
+	
+			</TableRow>
+	
+	        <TableRow
+	            android:id="@+id/tableRow6"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content" >
+	            
+	            <Button
+	                android:id="@+id/btn_login"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_marginBottom="30dp"
+	                android:layout_marginLeft="20dp"
+	                android:layout_marginRight="20dp"
+	                android:layout_marginTop="25dp"
+	                android:text="@string/login_label"
+	                android:textStyle="bold" />
+	            
+	        </TableRow>
+	
+	        <TableRow
+	            android:id="@+id/tableRow3b"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content" >
+	
+	            <TextView
+	                android:id="@+id/tv_signup_info"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_marginBottom="10dp"
+	                android:gravity="center"
+	                android:height="20dp"
+	                android:text="@string/signup_info_label"
+	                android:textAppearance="?android:attr/textAppearanceSmall" />
+	
+	        </TableRow>
+	
+	        <TableRow
+	            android:id="@+id/tableRow8"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content" >
+
+	            <Button
+	                android:id="@+id/btn_signup"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_marginBottom="10dp"
+	                android:layout_marginLeft="20dp"
+	                android:layout_marginRight="20dp"
+	                android:background="#70db93"
+	                android:onClick="renderSignupView"
+	                android:text="@string/signup_label" />
+	
+	        </TableRow>
+	
+	    </TableLayout>
+    
+    </RelativeLayout>
+
+</ScrollView>

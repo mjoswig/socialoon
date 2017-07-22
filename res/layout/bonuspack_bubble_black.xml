@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content" 
+	android:orientation="horizontal"
+	android:background="@drawable/bonuspack_bubble_black" >
+	<LinearLayout 
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content" 
+		android:layout_marginRight="5dp"
+		android:orientation="vertical" >
+		<ImageView android:id="@+id/bubble_image" 
+			android:layout_width="65dp"
+			android:layout_height="65dp" 
+			android:layout_marginLeft="5dp"
+			android:layout_marginRight="5dp"
+			android:visibility="gone" />
+			<LinearLayout 
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:orientation="horizontal" >
+				<ImageView
+					android:id="@+id/iv_trash"
+					android:layout_width="41dp"
+					android:layout_height="26dp"
+					android:layout_marginTop="5dp"
+					android:layout_marginRight="17dp"
+					android:layout_marginLeft="17dp"
+					android:src="@drawable/btn_trash"
+					android:visibility="gone" />
+		</LinearLayout>
+	</LinearLayout>
+	<LinearLayout 
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content" 
+		android:orientation="vertical" >
+
+		<LinearLayout 
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content" 
+			android:orientation="horizontal" >
+	    	<TextView android:id="@+id/bubble_title" 
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginRight="10dp"
+				android:textColor="#FFFFFF" 
+				android:maxEms="17"
+				android:layout_gravity="left"
+				android:layout_weight="1"
+				android:text="Title" />
+	    	<ImageView
+			    	android:id="@+id/iv_clock"
+			    	android:layout_width="13dp"
+			    	android:layout_height="13dp"
+			    	android:layout_marginTop="4dp"
+			    	android:layout_marginRight="3dp"
+			    	android:src="@drawable/clock" />
+			<TextView 
+			    android:id="@+id/bubble_subdescription" 
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="4dp"
+				android:textColor="#FFFFFF" 
+				android:textSize="10dp"
+				android:maxEms="17"
+				android:text="Address"
+				android:visibility="gone" />
+			<!-- <Button android:id="@+id/bubble_moreinfo"
+				android:background="@drawable/btn_moreinfo"
+				android:visibility="gone"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content" 
+				android:layout_gravity="right"
+				android:layout_weight="0" /> -->
+	    </LinearLayout>
+		<TextView android:id="@+id/bubble_description" 
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textColor="#FFFFFF" 
+			android:textSize="12dp"
+			android:maxEms="17"
+			android:text="Description" />
+	</LinearLayout>
+</LinearLayout>

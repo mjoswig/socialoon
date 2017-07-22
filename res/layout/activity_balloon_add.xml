@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<de.manuel_joswig.socialoon.util.NonFocusingScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/sv_balloon_add"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:orientation="vertical" >
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:columnCount="2"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:stretchColumns="*"
+        android:paddingTop="15dp"
+        android:paddingLeft="30dp"
+        android:paddingBottom="15dp"
+        android:paddingRight="30dp" >
+
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <EditText
+                android:id="@+id/et_meetup_title"
+                android:layout_width="wrap_content"
+                android:background="#d9d9d9"
+                android:ems="10"
+                android:hint="@string/meetup_title"
+                android:minEms="10"
+                android:padding="5dp"
+                android:textSize="15sp" />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <ImageView
+                android:id="@+id/iv_balloon"
+                android:layout_width="wrap_content"
+                android:layout_height="75dp"
+                android:layout_marginLeft="-180dp"
+                android:src="@drawable/balloon_blue_big" />
+
+            <RadioGroup
+                android:id="@+id/rg_balloon_type"
+                android:layout_marginLeft="-180dp"
+                android:layout_marginTop="5dp" >
+
+                <RadioButton
+                    android:id="@+id/rb_blue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:onClick="onRadioButtonClicked"
+                    android:text="@string/balloon_blue"
+                    android:textSize="15sp" />
+
+                <RadioButton
+                    android:id="@+id/rb_red"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="onRadioButtonClicked"
+                    android:text="@string/balloon_red"
+                    android:textSize="15sp" />
+
+                <!--  android:enabled="false" for mvp -->
+
+                <!-- <RadioButton
+                    android:id="@+id/rb_green"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:enabled="true"
+                    android:onClick="onRadioButtonClicked"
+                    android:text="@string/balloon_green"
+                    android:textSize="15sp" /> -->
+
+            </RadioGroup>
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow3a"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <DatePicker
+                android:id="@+id/dp_meetup_start"
+                android:layout_width="wrap_content"
+                android:layout_height="165dp"
+                android:layout_marginTop="-20dp"
+                android:calendarViewShown="false"
+                android:datePickerMode="spinner" />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow3b"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TimePicker
+                android:id="@+id/tp_meetup_start"
+                android:layout_width="wrap_content"
+                android:layout_height="165dp"
+                android:layout_marginTop="-30dp"
+                android:timePickerMode="spinner" />
+
+        </TableRow>
+        
+        <TableRow
+            android:id="@+id/tableRow4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <AutoCompleteTextView
+                android:id="@+id/actv_meetup_location"
+                android:layout_width="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:background="#d9d9d9"
+                android:ems="10"
+                android:hint="@string/meetup_location"
+                android:minEms="10"
+                android:padding="5dp"
+                android:textSize="15sp" />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <EditText
+                android:id="@+id/et_meetup_desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="30dp"
+                android:background="#d9d9d9"
+                android:ems="10"
+                android:hint="@string/short_desc"
+                android:inputType="textMultiLine"
+                android:padding="5dp"
+                android:textSize="15sp" >
+
+            </EditText>
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <Button
+                android:id="@+id/btn_meetup_submit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="createMeetup"
+                android:text="@string/add_balloon" />
+
+        </TableRow>
+
+    </TableLayout>
+
+</de.manuel_joswig.socialoon.util.NonFocusingScrollView>

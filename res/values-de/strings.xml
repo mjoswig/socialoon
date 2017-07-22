@@ -1,0 +1,50 @@
+<resources>
+
+    <string name="app_name">Socialoon</string>
+    
+    <string name="main_menu_map_item">Karte</string>
+    <string name="main_menu_pokes_item">Anstubser</string>
+    <string name="main_menu_profile_item">Benutzerprofil</string>
+    
+	<string name="username_label">Benutzername</string>
+	<string name="password_label">Passwort</string>
+	<string name="password_repeat_label">Passwort wiederholen</string>
+	<string name="email_label">E-Mail-Adresse</string>
+	<string name="register_label">Bestätigen</string>
+	
+	<string name="error_complete_all">Bitte alle Felder ausfüllen!</string>
+	<string name="error_invalid_username">Dein Benutzername muss mit einem Buchstaben anfangen und aus 4 bis 12 alphanumerischen Zeichen bestehen!</string>
+	<string name="error_unavailable_username">Der Benutzername ist nicht mehr verfügbar!</string>
+	<string name="error_invalid_email">Die gegebene E-Mail-Adresse ist ungültig!</string>
+	<string name="error_short_password">Dein Passwort muss mindestens aus 6 Zeichen bestehen!</string>
+	<string name="error_unequal_passwords">Die Passwörter stimmen nicht überein!</string>
+	<string name="error_invalid_date">Das Datum muss in der Zukunft liegen!</string>
+	<string name="error_invalid_location">Der Ort konnte nicht gefunden werden!</string>
+	
+	<string name="login_label">Anmelden</string>
+	<string name="signup_info_label">Noch keinen Account?</string>
+	<string name="signup_label">Registrieren</string>
+	<string name="error_incorrect_login">Falsche Anmeldedaten!</string>
+	
+	<string name="exit_alert_title">Abmelden</string>
+    <string name="exit_alert_message">Bist du sicher, dass du dich abmelden möchtest?</string>
+    
+    <string name="meetup_title">Kurzer Titel für dein Treffen</string>
+    <string name="balloon_blue">Spontane Aktivität</string>
+    <string name="balloon_red">Party &amp; Nachtleben</string>
+	<string name="balloon_green">Gesponserte Veranstaltung</string>
+	<string name="meetup_location">Wo findet dein Treffen statt?</string>
+	<string name="short_desc">Was hast du geplant?</string>
+	<string name="add_balloon">Fertig</string>
+	
+	<string name="profile_bio_placeholder">Erzähl uns etwas über dich</string>
+	<string name="profile_save">Speichern</string>
+	<string name="profile_saved">Änderungen gespeichert</string>
+	
+	<string name="no_pokes">Erstelle einen Ballon und treffe neue Leute in deiner Umgebung :)</string>
+	<string name="poked_you">will dich treffen</string>
+	
+	<string name="remove_balloon_title">Ballon entfernen</string>
+	<string name="remove_balloon_message">Bist du sicher, dass du den Ballon entfernen möchtest?</string>
+	
+</resources>

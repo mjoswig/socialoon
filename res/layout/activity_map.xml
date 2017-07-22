@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_map"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+    
+    <org.osmdroid.views.MapView
+        android:id="@+id/mapview"
+        android:layout_width="fill_parent" 
+        android:layout_height="fill_parent" />
+
+    <ImageButton
+        android:id="@+id/ib_balloon_add"
+        android:background="@null"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:onClick="onClick"
+        android:src="@drawable/ic_btn_balloon_add" />
+		
+</FrameLayout>

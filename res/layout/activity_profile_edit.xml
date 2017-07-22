@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+   	<TextView
+   	    android:id="@+id/tv_profile_username"
+   	    android:layout_width="wrap_content"
+   	    android:layout_height="wrap_content"
+   	    android:layout_below="@+id/iv_profile_avatar"
+   	    android:layout_centerHorizontal="true"
+   	    android:layout_marginTop="16dp"
+   	    android:textAppearance="?android:attr/textAppearanceLarge"
+   	    android:textSize="30sp" />
+
+   	<EditText
+   	    android:id="@+id/et_biography"
+   	    android:layout_width="match_parent"
+   	    android:layout_height="125dp"
+   	    android:layout_below="@+id/tv_profile_username"
+   	    android:layout_centerHorizontal="true"
+   	    android:layout_marginBottom="30dp"
+   	    android:layout_marginLeft="30dp"
+   	    android:layout_marginRight="30dp"
+   	    android:layout_marginTop="20dp"
+   	    android:background="#d9d9d9"
+   	    android:hint="@string/profile_bio_placeholder"
+   	    android:inputType="textMultiLine"
+   	    android:padding="5dp"
+   	    android:textSize="20sp" >
+
+   	</EditText>
+
+   	<Button
+   	    android:id="@+id/btn_profile_save"
+   	    android:layout_width="wrap_content"
+   	    android:layout_height="wrap_content"
+   	    android:layout_below="@+id/et_biography"
+   	    android:layout_alignLeft="@+id/et_biography"
+   	    android:layout_alignRight="@+id/et_biography"
+   	    android:onClick="saveChanges()"
+   	    android:text="@string/profile_save" />
+
+   	<ImageView
+   	    android:id="@+id/iv_profile_avatar"
+   	    android:layout_width="200dp"
+   	    android:layout_height="200dp"
+   	    android:layout_alignParentTop="true"
+   	    android:layout_centerHorizontal="true"
+   	    android:layout_marginTop="22dp"
+   	    android:src="@drawable/default_avatar" />
+   	
+   	<ImageView
+    	android:id="@+id/iv_verified"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignTop="@+id/tv_profile_username"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="7dp"
+        android:layout_toRightOf="@+id/tv_profile_username"
+       	android:src="@drawable/verified"
+       	android:visibility="gone" />
+
+   	<ImageView
+   	    android:id="@+id/iv_update_avatar"
+   	    android:layout_width="48dp"
+   	    android:layout_height="48dp"
+   	    android:layout_above="@+id/tv_profile_username"
+   	    android:layout_alignRight="@+id/iv_profile_avatar"
+   	    android:onClick="updateAvatar"
+   	    android:src="@drawable/btn_camera" />
+
+</RelativeLayout>
